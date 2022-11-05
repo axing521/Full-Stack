@@ -2,12 +2,16 @@
  * @creater:ACBash
  * @create_time:22-11-4 21:1:42
  * @last_modify:ACBash
- * @modify_time:22-11-4 21:31:30
- * @line_count:19
+ * @modify_time:22-11-6 1:22:16
+ * @line_count:23
  **/
 
 const express = require("express");
 const app = express();
+
+//解决请求接口跨域的问题
+const cors = require("cors");
+app.use(cors());
 
 //解析json格式的数据
 app.use(express.json());
